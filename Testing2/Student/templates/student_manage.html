@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+{% load static %}
+<link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'font-awesome.css' %}"> 
+
+<script src="{% static 'jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'bootstrap.min.js' %}"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+<section class="col-md-12">
+    <h1 class="page-header">Manage Student</h1>
+    <div class="row text-center">
+        <div class="col-md-12">
+             <a class="btn btn-primary " href="{% url 'Student:show_graph' %}">Real-time data from Sensor</a>
+        </div>
+    </div>
+</section>
+        </div>
+</div>
+ <p>{{ book.id }}</p>
+ <p>{{ book.name }}</p>
+ <p>{{ book.email }}</p>
+ <p>{{ book.mob }}</p>
+</body>
+</html>
+
+<script>
+        $(document.body).on("click", ".delete", function () {
+            $("#sureDelete").attr("href", $(this).data('url'));
+            $('#update_info').modal('show');
+
+        });
+</script>
+
+

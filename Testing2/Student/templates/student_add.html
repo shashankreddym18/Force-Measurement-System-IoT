@@ -1,0 +1,60 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  {% load static %}
+<link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'font-awesome.css' %}"> 
+<script src="{% static 'bootstrap.min.js' %}"></script>
+<style>
+    .col-md-12{
+        display: flex;
+        height: 60vh;
+        width: 60vw;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .btn{
+        background-color: darkgray;
+        padding: 20px 20px;
+        color: black;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+</style>
+</head>
+<body>
+    <p>
+
+
+
+
+
+
+    </p>
+    <div class="container">
+        <div class="row">
+            <section class="col-md-12">
+                <div class="row text-center">
+                    <div class="col-md-12">
+
+                        <a class="btn btn-primary " href="{% url 'Student:show_graph' %}">Real-time data from Sensor</a>
+                    </div>
+                </div>
+                <hr>
+                <!-- Table content -->
+                <div class="row">
+                    <div class="form-group">
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
+<script src="{% static 'jquery-3.3.1.min.js' %}"></script>
